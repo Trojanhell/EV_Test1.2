@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.evtest12">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".mail"></activity>
+        <activity android:name=".test2" />
+        <activity android:name=".MailReg" />
+        <activity android:name=".NameReg" />
+        <activity android:name=".timeSlot1" />
+        <activity android:name=".timeSlot" />
+        <activity android:name=".SlotBook" />
+        <activity android:name=".registration" />
+        <activity android:name=".Payment" />
+        <activity android:name=".otp" />
+        <activity android:name=".mobile" />
+        <activity android:name=".Map" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
