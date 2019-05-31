@@ -21,13 +21,13 @@
         android:textAlignment="center"
         android:inputType="phone"
         android:background="@null"
-        android:textSize="28dp"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18" />
+        app:layout_constraintVertical_bias="0.3" />
 
     <Button
         android:id="@+id/btn1"
@@ -46,6 +46,27 @@
         app:layout_constraintHorizontal_bias="0.899"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pText1"
-        app:layout_constraintVertical_bias="0.937" />
+        app:layout_constraintVertical_bias="0.937"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Enter One Time Password"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185" />
 
 </android.support.constraint.ConstraintLayout>
