@@ -4,12 +4,101 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.RadioGroup;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 public class SlotBook extends AppCompatActivity {
 
+
+    SearchView mySearchView;
+    ListView myList;
+
+    // ArrayList<String> list;
+    //   ArrayAdapter<String> adapter;
+    String []listviewitems = new String[]{
+            "Sector 17 G, Near Bus Stand, Chandigarh",
+            "Sector 35, Khukhrain Bhavan, Chandigarh",
+            "Sector 43 B, Near SBI Bank, Chandigarh",
+            "Sector 22 C, Civil hospital, Chandigarh",
+            "Sector 20 C, Sai Temple, Chandigarh",
+            "Sector 17 G, Near Bus Stand, Chandigarh",
+            "Sector 35, Khukhrain Bhavan, Chandigarh",
+            "Sector 43 B, Near SBI Bank, Chandigarh",
+            "Sector 22 C, Civil hospital, Chandigarh",
+            "Sector 20 C, Sai Temple, Chandigarh",
+            "Sector 17 G, Near Bus Stand, Chandigarh",
+            "Sector 35, Khukhrain Bhavan, Chandigarh",
+            "Sector 43 B, Near SBI Bank, Chandigarh",
+            "Sector 22 C, Civil hospital, Chandigarh",
+            "Sector 20 C, Sai Temple, Chandigarh",
+
+    };
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_slot_book);
+
+        mySearchView = (SearchView)findViewById(R.id.searchView);
+        myList = (ListView)findViewById(R.id.myList);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listviewitems);
+        myList.setAdapter(adapter);
+
+        myList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String templistview = listviewitems[position].toString();
+                Intent intent = new Intent(SlotBook.this, timeSlot1.class);
+                startActivity(intent);
+            }
+        });
+/*
+        list = new ArrayList<String>();
+
+        list.add("Sector 17 G, Near Bus Stand, Chandigarh");
+        list.add("Sector 35, Khukhrain Bhavan, Chandigarh");
+        list.add("Sector 43 B, Near SBI Bank, Chandigarh");
+        list.add("Sector 22 C, Civil hospital, Chandigarh");
+        list.add("Sector 20 C, Sai Temple, Chandigarh");
+        list.add("Sector 17 G, Near Bus Stand, Chandigarh");
+        list.add("Sector 20 C, Sai Temple, Chandigarh");
+        list.add("Sector 22 C, Civil hospital, Chandigarh");
+        list.add("Sector 43 B, Near SBI Bank, Chandigarh");
+        list.add("Sector 35, Khukhrain Bhavan, Chandigarh");
+        list.add("Sector 17 G, Near Bus Stand, Chandigarh");
+
+*/
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listviewitems);
+
+        myList.setAdapter(adapter);
+
+        final ArrayAdapter<String> finalAdapter = adapter;
+        mySearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+
+                finalAdapter.getFilter().filter(s);
+
+                return false;
+            }
+        });
+
+    }
+
+}
+
+/*
     private Button book1;
     RadioGroup g1;
 
@@ -102,6 +191,8 @@ public class SlotBook extends AppCompatActivity {
             }
         });*/
 
+/*
+
     }
 
     @Override
@@ -110,4 +201,4 @@ public class SlotBook extends AppCompatActivity {
 
         overridePendingTransition(R.anim.goup, R.anim.godown);
     }
-}
+}*/

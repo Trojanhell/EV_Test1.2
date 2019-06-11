@@ -16,10 +16,8 @@
         <activity android:name=".otp_tran" />
         <activity android:name=".Stop" />
         <activity android:name=".Start" />
-        <activity android:name=".mail" />
         <activity android:name=".test2" />
         <activity android:name=".MailReg" />
-        <activity android:name=".NameReg" />
         <activity android:name=".timeSlot1" />
         <activity
             android:name=".SlotBook"

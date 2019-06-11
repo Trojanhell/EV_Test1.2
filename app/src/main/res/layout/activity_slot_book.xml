@@ -1,13 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
     tools:context=".SlotBook"
     android:background="#c3d3c7">
 
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#22b14c"
+        android:paddingTop="0dp"
+        android:text="Book your slots here"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textIsSelectable="true"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search here"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"></SearchView>
+
+
+    <ListView
+        android:id="@+id/myList"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/searchView">
+
+    </ListView>
+
+<!--
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,247 +69,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:background="#c3d3c7">
-
-
-            <!-- Sector ...........17........... Start.............. files -->
-            <!-- Sector 17 location image-->
-            <!--  <ImageView
-        android:id="@+id/loc1"
-        android:layout_width="21dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.021"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.317"
-        app:srcCompat="@drawable/location" />
-
-        -->
-            <!-- Sector 35 location image-->
-            <!--   <ImageView
-               android:id="@+id/loc2"
-               android:layout_width="21dp"
-               android:layout_height="21dp"
-               android:layout_marginStart="8dp"
-               android:layout_marginLeft="8dp"
-               android:layout_marginTop="8dp"
-               android:layout_marginEnd="8dp"
-               android:layout_marginRight="8dp"
-               app:layout_constraintBottom_toBottomOf="parent"
-               app:layout_constraintEnd_toEndOf="parent"
-               app:layout_constraintHorizontal_bias="0.021"
-               app:layout_constraintStart_toStartOf="parent"
-               app:layout_constraintTop_toTopOf="parent"
-               app:layout_constraintVertical_bias="0.176"
-               app:srcCompat="@drawable/location" />
-               -->
-            <!-- Sector 43 location image-->
-            <!--  <ImageView
-              android:id="@+id/loc3"
-              android:layout_width="21dp"
-              android:layout_height="21dp"
-              android:layout_marginStart="8dp"
-              android:layout_marginLeft="8dp"
-              android:layout_marginTop="8dp"
-              android:layout_marginEnd="8dp"
-              android:layout_marginRight="8dp"
-              android:layout_marginBottom="8dp"
-              app:layout_constraintBottom_toBottomOf="parent"
-              app:layout_constraintEnd_toEndOf="parent"
-              app:layout_constraintHorizontal_bias="0.021"
-              app:layout_constraintStart_toStartOf="parent"
-              app:layout_constraintTop_toTopOf="parent"
-              app:layout_constraintVertical_bias="01"
-              app:srcCompat="@drawable/location" />-->
-
-
-            <!-- Sector ...........20........... Start.............. files -->
-            <!-- Sector 20 location image-->
-            <!--   <ImageView
-               android:id="@+id/loc4"
-               android:layout_width="21dp"
-               android:layout_height="21dp"
-               android:layout_marginStart="8dp"
-               android:layout_marginLeft="8dp"
-               android:layout_marginTop="336dp"
-               android:layout_marginEnd="8dp"
-               android:layout_marginRight="8dp"
-               android:layout_marginBottom="8dp"
-               app:layout_constraintBottom_toBottomOf="parent"
-               app:layout_constraintEnd_toEndOf="parent"
-               app:layout_constraintHorizontal_bias="0.016"
-               app:layout_constraintStart_toStartOf="parent"
-               app:layout_constraintTop_toTopOf="parent"
-               app:layout_constraintVertical_bias="0.524"
-               app:srcCompat="@drawable/location" />-->
-
-
-            <!-- Sector ...........22........... Start.............. files -->
-            <!-- Sector 22 location image-->
-            <!--  <ImageView
-              android:id="@+id/loc5"
-              android:layout_width="21dp"
-              android:layout_height="21dp"
-              android:layout_marginStart="8dp"
-              android:layout_marginLeft="8dp"
-              android:layout_marginTop="8dp"
-              android:layout_marginEnd="8dp"
-              android:layout_marginRight="8dp"
-              app:layout_constraintBottom_toBottomOf="parent"
-              app:layout_constraintEnd_toEndOf="parent"
-              app:layout_constraintHorizontal_bias="0.021"
-              app:layout_constraintStart_toStartOf="parent"
-              app:layout_constraintTop_toTopOf="parent"
-              app:layout_constraintVertical_bias="0.246"
-              app:srcCompat="@drawable/location" />-->
-
-
-            <!-- Sector ...........25........... Start.............. files -->
-            <!-- Sector 22 location image-->
-            <!--  <ImageView
-              android:id="@+id/loc7"
-              android:layout_width="21dp"
-              android:layout_height="21dp"
-              android:layout_marginStart="8dp"
-              android:layout_marginLeft="8dp"
-              android:layout_marginTop="8dp"
-              android:layout_marginEnd="8dp"
-              android:layout_marginRight="8dp"
-              android:layout_marginBottom="8dp"
-              app:layout_constraintBottom_toBottomOf="parent"
-              app:layout_constraintEnd_toEndOf="parent"
-              app:layout_constraintHorizontal_bias="0.021"
-              app:layout_constraintStart_toStartOf="parent"
-              app:layout_constraintTop_toTopOf="parent"
-              app:layout_constraintVertical_bias="0.393"
-              app:srcCompat="@drawable/location" />
-              -->
-            <!-- Sector ...........01........... Start.............. files -->
-            <!-- Sector 01 location image-->
-            <!--   <ImageView
-               android:id="@+id/loc8"
-               android:layout_width="21dp"
-               android:layout_height="21dp"
-               android:layout_marginStart="8dp"
-               android:layout_marginLeft="8dp"
-               android:layout_marginTop="8dp"
-               android:layout_marginEnd="8dp"
-               android:layout_marginRight="8dp"
-               android:layout_marginBottom="8dp"
-               app:layout_constraintBottom_toBottomOf="parent"
-               app:layout_constraintEnd_toEndOf="parent"
-               app:layout_constraintHorizontal_bias="0.021"
-               app:layout_constraintStart_toStartOf="parent"
-               app:layout_constraintTop_toTopOf="parent"
-               app:layout_constraintVertical_bias="0.544"
-               app:srcCompat="@drawable/location" />
-       -->
-            <!-- Sector ...........08........... Start.............. files -->
-            <!-- Sector 08 location image-->
-            <!-- <ImageView
-             android:id="@+id/loc9"
-             android:layout_width="21dp"
-             android:layout_height="21dp"
-             android:layout_marginStart="8dp"
-             android:layout_marginLeft="8dp"
-             android:layout_marginTop="8dp"
-             android:layout_marginEnd="8dp"
-             android:layout_marginRight="8dp"
-             android:layout_marginBottom="8dp"
-             app:layout_constraintBottom_toBottomOf="parent"
-             app:layout_constraintEnd_toEndOf="parent"
-             app:layout_constraintHorizontal_bias="0.016"
-             app:layout_constraintStart_toStartOf="parent"
-             app:layout_constraintTop_toTopOf="parent"
-             app:layout_constraintVertical_bias="0.615"
-             app:srcCompat="@drawable/location" />
-     -->
-            <!-- Sector ...........25........... Start.............. files -->
-            <!-- Sector 22 location image-->
-            <!--   <ImageView
-               android:id="@+id/loc10"
-               android:layout_width="21dp"
-               android:layout_height="21dp"
-               android:layout_marginStart="8dp"
-               android:layout_marginLeft="8dp"
-               android:layout_marginTop="8dp"
-               android:layout_marginEnd="8dp"
-               android:layout_marginRight="8dp"
-               android:layout_marginBottom="8dp"
-               app:layout_constraintBottom_toBottomOf="parent"
-               app:layout_constraintEnd_toEndOf="parent"
-               app:layout_constraintHorizontal_bias="0.021"
-               app:layout_constraintStart_toStartOf="parent"
-               app:layout_constraintTop_toTopOf="parent"
-               app:layout_constraintVertical_bias="0.84"
-               app:srcCompat="@drawable/location" />
-
-           <ImageView
-               android:id="@+id/loc11"
-               android:layout_width="21dp"
-               android:layout_height="21dp"
-               android:layout_marginStart="8dp"
-               android:layout_marginLeft="8dp"
-               android:layout_marginTop="8dp"
-               android:layout_marginEnd="8dp"
-               android:layout_marginRight="8dp"
-               android:layout_marginBottom="8dp"
-               app:layout_constraintBottom_toBottomOf="parent"
-               app:layout_constraintEnd_toEndOf="parent"
-               app:layout_constraintHorizontal_bias="0.016"
-               app:layout_constraintStart_toStartOf="parent"
-               app:layout_constraintTop_toTopOf="parent"
-               app:layout_constraintVertical_bias="0.691"
-               app:srcCompat="@drawable/location" />
-
-
-           <ImageView
-               android:id="@+id/loc12"
-               android:layout_width="21dp"
-               android:layout_height="21dp"
-               android:layout_marginStart="8dp"
-               android:layout_marginLeft="8dp"
-               android:layout_marginTop="8dp"
-               android:layout_marginEnd="8dp"
-               android:layout_marginRight="8dp"
-               android:layout_marginBottom="8dp"
-               app:layout_constraintBottom_toBottomOf="parent"
-               app:layout_constraintEnd_toEndOf="parent"
-               app:layout_constraintHorizontal_bias="0.021"
-               app:layout_constraintStart_toStartOf="parent"
-               app:layout_constraintTop_toTopOf="parent"
-               app:layout_constraintVertical_bias="0.469"
-               app:srcCompat="@drawable/location" />
-       -->
-            -->
-            <!-- Sector 22 Text View-->
-            <!--<TextView
-                android:id="@+id/tv14"
-                android:layout_width="265dp"
-                android:layout_height="25dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp"
-                android:text="Sector 14, Behind PU market, Chandigarh"
-                android:textColor="#000000"
-                android:textSize="14dp"
-                app:layout_constraintBottom_toTopOf="@+id/btn4"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintVertical_bias="0.733" />-->
-
-
-            Sector ...........14........... End.............. files -->
 
 
             <RadioGroup
@@ -645,9 +448,6 @@
 
         </LinearLayout>
     </ScrollView>
-
-
-    <!-- Text View Slot Booking Heading -->
     <TextView
         android:id="@+id/textView2"
         android:layout_width="345dp"
@@ -671,8 +471,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias=".01" />
 
-    <!-- Proceed Button --><![CDATA[
-    ]]><Button
+<Button
     android:id="@+id/btn4"
     android:layout_width="340dp"
     android:layout_height="51dp"
@@ -689,4 +488,6 @@
     app:layout_constraintHorizontal_bias="0.454"
     app:layout_constraintStart_toStartOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+    -->
+
+</LinearLayout>

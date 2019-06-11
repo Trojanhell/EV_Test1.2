@@ -249,7 +249,7 @@
         android:layout_height="match_parent"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:background="#f2f2f2"
+        android:background="#c3d3c7"
         android:fillViewport="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -265,22 +265,36 @@
 
             <RadioGroup
                 android:id="@+id/G2"
-                android:layout_width="358dp"
+                android:layout_width="373dp"
                 android:layout_height="937dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="0dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp"
-                android:paddingLeft="80dp"
-                android:paddingTop="120dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.774"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textView3"
-                app:layout_constraintVertical_bias="0.573">
+                android:paddingLeft="40dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/tV17"
+                    android:layout_width="203dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Sector 17 G, Near Bus Stand, Chandigarh"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.774"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.111" />
 
                 <RadioButton
                     android:id="@+id/rb1"
@@ -607,14 +621,14 @@
     <!-- Proceed Next Button-->
     <Button
         android:id="@+id/btn6"
-        android:layout_width="340dp"
-        android:layout_height="51dp"
+        android:layout_width="345dp"
+        android:layout_height="44dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="2dp"
         android:background="#73bd6d"
         android:text="Proceed"
         android:textSize="24dp"
@@ -649,24 +663,6 @@
 
 
     <!-- Sector 17 Text View-->
-    <TextView
-        android:id="@+id/tV17"
-        android:layout_width="203dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Sector 17 G, Near Bus Stand, Chandigarh"
-        android:textColor="#000000"
-        android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.774"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.111" />
+
 
 </android.support.constraint.ConstraintLayout>
