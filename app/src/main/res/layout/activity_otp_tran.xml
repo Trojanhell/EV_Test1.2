@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MailReg"
+    tools:context=".otp_tran"
     android:background="#e5efe8">
+
 
     <EditText
         android:id="@+id/pText1"
@@ -18,9 +19,9 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:hint="Enter your email"
+        android:hint="Enter OTP"
         android:textAlignment="center"
-        android:inputType="textEmailAddress"
+        android:inputType="phone"
         android:background="@null"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,7 +32,7 @@
         app:layout_constraintVertical_bias="0.3" />
 
     <Button
-        android:id="@+id/btnRegMail"
+        android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -47,11 +48,12 @@
         app:layout_constraintHorizontal_bias="0.899"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pText1"
-        app:layout_constraintVertical_bias="0.937" />
+        app:layout_constraintVertical_bias="0.937"/>
+
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="180dp"
+        android:layout_width="280dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -59,7 +61,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Enter your email"
+        android:text="Enter One Time Password"
         android:textColor="#000000"
         android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"

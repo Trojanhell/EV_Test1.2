@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Payment_tran"></activity>
+        <activity android:name=".Profile_frag"></activity>
+        <activity android:name=".nav_activity" />
+        <activity android:name=".Payment_tran" />
         <activity android:name=".Pay_tran" />
         <activity android:name=".otp_tran" />
         <activity android:name=".Stop" />
@@ -19,7 +21,9 @@
         <activity android:name=".MailReg" />
         <activity android:name=".NameReg" />
         <activity android:name=".timeSlot1" />
-        <activity android:name=".SlotBook" />
+        <activity
+            android:name=".SlotBook"
+            android:screenOrientation="portrait" />
         <activity android:name=".registration" />
         <activity android:name=".Payment" />
         <activity android:name=".otp" />

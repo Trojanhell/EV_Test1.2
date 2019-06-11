@@ -3,18 +3,12 @@ package com.example.evtest12;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class otp extends AppCompatActivity {
-
-    private EditText editText1, editText2, editText3, editText4;
-    private EditText[] editTexts;
+public class otp_tran extends AppCompatActivity {
 
     private EditText Otp;
     private Button Next;
@@ -26,8 +20,8 @@ public class otp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp);
 
-        Otp = (EditText)findViewById(R.id.pText1);
-        Next = (Button)findViewById(R.id.btn1);
+        Otp = findViewById(R.id.pText1);
+        Next = findViewById(R.id.btn1);
 
         Next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,11 +33,9 @@ public class otp extends AppCompatActivity {
 
     }
 
-
-
     private void validate(String otpNo){
-        if (otpNo.equals("0000")){
-            Intent intent = new Intent(otp.this, nav_activity.class);
+        if (otpNo.equals("1234")){
+            Intent intent = new Intent(otp_tran.this, Payment_tran.class);
             startActivity(intent);
         }
 

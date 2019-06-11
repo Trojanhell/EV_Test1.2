@@ -41,7 +41,6 @@
         android:layout_marginBottom="28dp"
         android:background="#73bd6d"
         android:text="NEXT"
-        android:textAlignment=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.899"

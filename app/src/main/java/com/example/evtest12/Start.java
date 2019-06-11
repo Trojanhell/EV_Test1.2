@@ -6,20 +6,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MailReg extends AppCompatActivity {
-
-    private Button mailreg;
+public class Start extends AppCompatActivity {
+    private Button startbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mail_reg);
+        setContentView(R.layout.activity_start);
 
-        Button mailreg = (Button) findViewById(R.id.btnRegMail);
-        //mailreg.findViewById(R.id.btnRegMail);
-        mailreg.setOnClickListener(new View.OnClickListener() {
+        startbtn = findViewById(R.id.btnstart);
+        startbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MailReg.this, otp.class);
+                Intent intent = new Intent(Start.this, Stop.class);
                 startActivity(intent);
             }
         });

@@ -6,20 +6,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class timeSlot extends AppCompatActivity {
+public class Stop extends AppCompatActivity {
 
-    private Button pro;
+    private Button stopbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_time_slot);
+        setContentView(R.layout.activity_stop);
 
-        pro.findViewById(R.id.btn6);
-        pro.setOnClickListener(new View.OnClickListener() {
+        stopbtn = findViewById(R.id.btnstop);
+
+        stopbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent;
-                intent = new Intent(timeSlot.this, Payment.class);
+                Intent intent = new Intent(Stop.this, otp_tran.class);
                 startActivity(intent);
             }
         });
