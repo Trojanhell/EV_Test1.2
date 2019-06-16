@@ -30,7 +30,7 @@ public class home_frag extends Fragment {
         });
 
         intent1 = new Intent(getActivity(), Start.class);
-        final Button button1 = (Button) rootview.findViewById(R.id.btn_start);
+        final Button button1 = (Button) rootview.findViewById(R.id.btn_rh);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override

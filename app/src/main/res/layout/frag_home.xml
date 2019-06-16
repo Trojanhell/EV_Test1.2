@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#bcd1c1"
     android:layout_height="match_parent">
 
     <Button
@@ -16,16 +17,19 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="44dp"
-        android:background="#73bd6d"
-        android:text="Slots Booking"
-        android:textSize="24dp"
+        android:background="@drawable/slot_book_btn"
+        android:text="Slot Booking"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.661"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
-
+<!--
     <Button
         android:id="@+id/btn_start"
         android:layout_width="35dp"
@@ -43,11 +47,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.102" />
-
+-->
     <ImageView
         android:id="@+id/imgMap"
-        android:layout_width="466dp"
-        android:layout_height="565dp"
+        android:layout_width="507dp"
+        android:layout_height="730dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
@@ -55,5 +59,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/map1" />
+
+    <Button
+        android:id="@+id/btn_rh"
+        android:layout_width="75dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_rhombus"
+        android:stateListAnimator="@null"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textColor="#c3d3c7"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgMap"
+        app:layout_constraintVertical_bias="0.011"
+        tools:visibility="visible" />
 
 </android.support.constraint.ConstraintLayout>

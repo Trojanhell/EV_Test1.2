@@ -26,6 +26,7 @@ public class otp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp);
 
+
         Otp = (EditText)findViewById(R.id.pText1);
         Next = (Button)findViewById(R.id.btn1);
 

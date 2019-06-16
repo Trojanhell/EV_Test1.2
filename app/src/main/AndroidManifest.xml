@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Profile_frag"></activity>
-        <activity android:name=".nav_activity" />
+        <activity android:name=".otp_new"></activity>
+        <activity android:name=".Profile_frag" />
+        <activity
+            android:name=".nav_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Payment_tran" />
         <activity android:name=".Pay_tran" />
         <activity android:name=".otp_tran" />

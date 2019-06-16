@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="30dp"
     tools:context=".SlotBook"
-    android:background="#c3d3c7">
+    android:background="#b5ccba">
 
 
     <TextView
@@ -17,12 +17,14 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="#22b14c"
+        android:background="#56a567"
+
         android:paddingTop="0dp"
-        android:text="Book your slots here"
+        android:text="Select Location"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textIsSelectable="true"
+
         android:textSize="26dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,25 +35,41 @@
     <SearchView
         android:id="@+id/searchView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:iconifiedByDefault="false"
         android:queryHint="Search here"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"></SearchView>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        tools:layout_editor_absoluteX="-36dp"></SearchView>
 
 
     <ListView
         android:id="@+id/myList"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:paddingTop="10dp"
-        android:layout_below="@+id/searchView">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"></ListView>
 
-    </ListView>
-
-<!--
+    <!--
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

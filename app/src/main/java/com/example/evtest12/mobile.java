@@ -16,7 +16,6 @@ public class mobile extends AppCompatActivity {
 
     private EditText Phone;
     private Button Next;
-    private Button Reg;
 
     private int counter = 3;
 
@@ -27,12 +26,15 @@ public class mobile extends AppCompatActivity {
 
         Phone = (EditText) findViewById(R.id.pText);
         Next = (Button) findViewById(R.id.btn);
-        Reg = (Button) findViewById(R.id.btn2);
+
 
         Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 validate(Phone.getText().toString());
+
+                Phone.setText("");
+
 
             }
         });
@@ -43,7 +45,7 @@ public class mobile extends AppCompatActivity {
     /* OTP screen code*/
     private void validate(String phoneNo) {
         if ((phoneNo.equals("9872314250")) || (phoneNo.equals("9450984250"))) {
-            Intent intent = new Intent(mobile.this, otp.class);
+            Intent intent = new Intent(mobile.this, otp_new.class);
             startActivity(intent);
         } /*else{
             Intent intent = new Intent(mobile.this, NameReg.class);
@@ -57,7 +59,9 @@ public class mobile extends AppCompatActivity {
             Intent intent = new Intent(mobile.this, test2.class);
             startActivity(intent);
         }
-}}
+}
+
+}
 
 /*       else {
             counter--;
