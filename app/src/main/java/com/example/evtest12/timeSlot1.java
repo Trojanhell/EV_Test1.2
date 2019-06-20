@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class timeSlot1 extends AppCompatActivity {
 
     private Button proceed;
+    private Button back_btn;
     RadioGroup radioGroup;
    // RadioButton rb1, rb2, rb3, rb4, rb5, rb6, rb7, rb8, rb9, rb10, rb11, rb12, rb13, rb14;
 
@@ -26,6 +27,15 @@ public class timeSlot1 extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(timeSlot1.this, Payment.class);
+                startActivity(intent);
+            }
+        });
+
+        back_btn = findViewById(R.id.back_btn);
+        back_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(timeSlot1.this, SlotBook.class);
                 startActivity(intent);
             }
         });

@@ -13,15 +13,23 @@ public class test2 extends AppCompatActivity {
 
 
     private EditText name;
-    private Button next;
+    private Button next, back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test2);
 
+        back = (Button)findViewById(R.id.back_btn);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(test2.this, signup.class);
+                startActivity(intent);
+            }
+        });
+
         final Button next = (Button) findViewById(R.id.btnReg);
         name = findViewById(R.id.enterName);
-
 
         name.addTextChangedListener(new TextWatcher() {
             @Override
@@ -46,7 +54,7 @@ public class test2 extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(test2.this, MailReg.class);
+                Intent intent = new Intent(test2.this, otp_new.class);
                 startActivity(intent);
             }
         });

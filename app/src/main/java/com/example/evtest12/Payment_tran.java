@@ -19,7 +19,7 @@ public class Payment_tran extends AppCompatActivity {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(Payment_tran.this, nav_activity.class);
+                Intent intent = new Intent(Payment_tran.this, Payment.class);
                 startActivity(intent);
                 finish();
             }

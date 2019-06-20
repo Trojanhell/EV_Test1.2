@@ -9,13 +9,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.NoActionBar"
-        android:background="@android:color/transparent">
+        android:background="@null">
+        <!-- android:outlineAmbientShadowColor="@android:color/transparent"-->
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="218dp"
             android:layout_height="match_parent"
-            android:background="@android:color/transparent"
+            android:background="@null"
             app:popupTheme="@style/AppTheme.NoActionBar" />
 
     </android.support.design.widget.AppBarLayout>

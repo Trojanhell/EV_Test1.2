@@ -15,7 +15,7 @@ import android.content.Intent;
 public class mobile extends AppCompatActivity {
 
     private EditText Phone;
-    private Button Next;
+    private Button Next, Back;
 
     private int counter = 3;
 
@@ -27,39 +27,25 @@ public class mobile extends AppCompatActivity {
         Phone = (EditText) findViewById(R.id.pText);
         Next = (Button) findViewById(R.id.btn);
 
+        Back = (Button)findViewById(R.id.back_btn);
+        Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mobile.this, signup.class);
+                startActivity(intent);
+            }
+        });
 
         Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                validate(Phone.getText().toString());
-
-                Phone.setText("");
-
-
+                Intent intent = new Intent(mobile.this, otp_new.class);
+                startActivity(intent);
             }
         });
 
+
     }
-
-
-    /* OTP screen code*/
-    private void validate(String phoneNo) {
-        if ((phoneNo.equals("9872314250")) || (phoneNo.equals("9450984250"))) {
-            Intent intent = new Intent(mobile.this, otp_new.class);
-            startActivity(intent);
-        } /*else{
-            Intent intent = new Intent(mobile.this, NameReg.class);
-            startActivity(intent);
-        }*/
-     /*  else if ((phoneNo.equals("8175076544")) || (phoneNo.equals("9450730239"))) {
-            Intent intent = new Intent(mobile.this, NameReg.class);
-            startActivity(intent);
-        }*/
-     else {
-            Intent intent = new Intent(mobile.this, test2.class);
-            startActivity(intent);
-        }
-}
 
 }
 

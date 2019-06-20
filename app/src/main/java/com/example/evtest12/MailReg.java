@@ -19,7 +19,7 @@ public class MailReg extends AppCompatActivity {
         mailreg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MailReg.this, otp.class);
+                Intent intent = new Intent(MailReg.this, otp_new.class);
                 startActivity(intent);
             }
         });

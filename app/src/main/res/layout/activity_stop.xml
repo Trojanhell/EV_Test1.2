@@ -61,7 +61,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3" />
 
-    <!-- Press start to proceed transaction -->
+    <!-- Press start to proceed trans -->
     <TextView
         android:id="@+id/tvstop"
         android:layout_width="275dp"
@@ -89,7 +89,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="44dp"
-        android:background="#73bd6d"
+        android:background="@drawable/btn_rhombus"
         android:text="Stop"
         android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"

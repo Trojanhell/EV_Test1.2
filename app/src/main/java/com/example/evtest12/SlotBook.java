@@ -17,6 +17,7 @@ public class SlotBook extends AppCompatActivity {
 
     SearchView mySearchView;
     ListView myList;
+    private Button Back;
 
     // ArrayList<String> list;
     //   ArrayAdapter<String> adapter;
@@ -43,6 +44,16 @@ public class SlotBook extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slot_book);
+
+
+        Back = (Button)findViewById(R.id.back_btn);
+        Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SlotBook.this, nav_activity.class);
+                startActivity(intent);
+            }
+        });
 
         mySearchView = (SearchView)findViewById(R.id.searchView);
         myList = (ListView)findViewById(R.id.myList);

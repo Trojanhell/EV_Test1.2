@@ -18,7 +18,7 @@ public class otp_tran extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_otp);
+        setContentView(R.layout.activity_otp_tran);
 
         Otp = findViewById(R.id.pText1);
         Next = findViewById(R.id.btn1);
@@ -35,7 +35,7 @@ public class otp_tran extends AppCompatActivity {
 
     private void validate(String otpNo){
         if (otpNo.equals("1234")){
-            Intent intent = new Intent(otp_tran.this, Payment_tran.class);
+            Intent intent = new Intent(otp_tran.this, charging_percentage.class);
             startActivity(intent);
         }
 

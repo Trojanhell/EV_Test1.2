@@ -1,5 +1,6 @@
 package com.example.evtest12;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -13,15 +14,18 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class nav_activity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nav_activity);
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -57,16 +61,25 @@ public class nav_activity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.nav_home) {
             fragment = new home_frag();
 
-        } else if (id == R.id.nav_profile){
-            fragment = new Profile_frag();
-
         } else if (id == R.id.nav_booking) {
+            Intent intent = new Intent(nav_activity.this, Booking_history.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_trans) {
+            Intent intent = new Intent(nav_activity.this, Start.class);
+            startActivity(intent);
+
+        }else if (id == R.id.nav_setting) {
+                Intent intent = new Intent(nav_activity.this, Account_setting.class);
+                startActivity(intent);
 
         } else if (id == R.id.nav_about) {
+            Intent intent = new Intent(nav_activity.this, About.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_supp) {
+            Intent intent = new Intent(nav_activity.this, Support.class);
+            startActivity(intent);
 
         }
 

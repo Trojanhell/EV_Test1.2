@@ -16,6 +16,7 @@ public class otp_new extends AppCompatActivity {
     private EditText editText1, editText2, editText3, editText4;
     private EditText[] editTexts;
     private Button Next;
+    private Button Back;
     private int counter = 3;
 
     @Override
@@ -24,7 +25,10 @@ public class otp_new extends AppCompatActivity {
         setContentView(R.layout.activity_otp_new);
 
         Next = (Button)findViewById(R.id.btn1);
+        Back = (Button)findViewById(R.id.back_btn);
+
         editText1 = (EditText) findViewById(R.id.et1);
+        ((EditText) editText1).setSelection(0);
         editText2 = (EditText) findViewById(R.id.et2);
         editText3 = (EditText) findViewById(R.id.et3);
         editText4 = (EditText) findViewById(R.id.et4);
@@ -40,23 +44,31 @@ public class otp_new extends AppCompatActivity {
         editText3.setOnKeyListener(new PinOnKeyListener(2));
         editText4.setOnKeyListener(new PinOnKeyListener(3));
 
+        Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(otp_new.this, mobile.class);
+                startActivity(intent);
+            }
+        });
+
         Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                validate1(editText1.getText().toString());
+          //      validate1(editText1.getText().toString());
 
-                validate1(editText2.getText().toString());
+              //  validate1(editText2.getText().toString());
 
-                validate1(editText3.getText().toString());
+                //validate1(editText3.getText().toString());
 
-                validate1(editText4.getText().toString());
+                //validate1(editText4.getText().toString());
 
                 Intent intent = new Intent(otp_new.this, nav_activity.class);
                 startActivity(intent);
             }
         });
     }
-
+/*
     private void validate1(String otpNo1) {
         if ((editText1.equals("0"))) {
             editText2.requestFocus();
@@ -91,14 +103,14 @@ public class otp_new extends AppCompatActivity {
                 Next.setEnabled(false);
             }
         }
-    }
+    }*/
 
 
 
     public class PinTextWatcher implements TextWatcher {
 
         private int currentIndex;
-        private boolean isFirst = false, isLast = false;
+        private boolean isFirst = true, isLast = false;
         private String newTypedString = "";
 
         PinTextWatcher(int currentIndex) {
@@ -139,7 +151,7 @@ public class otp_new extends AppCompatActivity {
             if (text.length() == 1)
                 moveToNext();
             // else if (text.length() == 0)
-            //   moveToPrevious();
+            //  moveToPrevious();
         }
 
         private void moveToNext() {

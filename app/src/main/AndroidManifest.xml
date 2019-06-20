@@ -9,11 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".otp_new"></activity>
-        <activity android:name=".Profile_frag" />
+        <activity android:name=".About"></activity>
+        <activity android:name=".Support" />
+        <activity android:name=".Account_setting" />
+        <activity android:name=".Booking_history" />
+        <activity android:name=".charging_percentage" />
+        <activity android:name=".signup" />
+        <activity android:name=".otp_new" />
         <activity
             android:name=".nav_activity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".Payment_tran" />
         <activity android:name=".Pay_tran" />
         <activity android:name=".otp_tran" />
@@ -25,9 +30,7 @@
         <activity
             android:name=".SlotBook"
             android:screenOrientation="portrait" />
-        <activity android:name=".registration" />
         <activity android:name=".Payment" />
-        <activity android:name=".otp" />
         <activity android:name=".mobile" />
         <activity android:name=".Map" />
         <activity android:name=".MainActivity">

@@ -7,7 +7,26 @@
     tools:context=".Start"
     android:background="#e5efe8">
 
-    <!-- Press start to proceed transaction -->
+
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="50dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Press start to proceed trans -->
     <TextView
         android:id="@+id/tvstart"
         android:layout_width="275dp"
@@ -34,9 +53,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="44dp"
-        android:background="#73bd6d"
+        android:background="@drawable/btn_rhombus"
         android:text="Start"
         android:textSize="24dp"
+        android:shadowRadius="0"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:elevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
